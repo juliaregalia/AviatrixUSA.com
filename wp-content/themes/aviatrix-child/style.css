@@ -1,14 +1,25 @@
 /*
- Theme Name:   UnderStrap Child
- Theme URI:    https://www.understrap.com
- Description:  UnderStrap Child Theme
- Author:       Holger Koenemann
- Author URI:   http://www.holgerkoenemann.de
- Template:     understrap
- Version:      0.5.5
- License: GNU General Public License v2 or later
- License URI: http://www.gnu.org/licenses/gpl-2.0.html
- Text Domain:  understrap-child
- Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
- GitHub Theme URI: holger1411/understrap-child
+Theme Name: Aviatrix (Child Theme)
+Author: Julia Regalia
+Author URI: juliaregalia.com
+GitHub Theme URI: https://github.com/
+Description: This is a custom theme built for AviatrixUSA.com based on Understrap Child Theme.
+License: Aviatrix WordPress Theme, Copyright 2020 Julia Regalia
+
+The Understrap theme, like WordPress, is licensed under the GPL.
+UnderStrap is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+
+Resource Licenses:
+Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)
+and of course
+jQuery: https://jquery.org | (Code licensed under MIT)
+WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
+*/
+
+/*
+This file is just used to identify the theme in WordPress.
+The compiled CSS output can be found in /css/theme.css
+The SASS sources for it can be found in /sass/
+The dependencies can be found in /src/ after running "gulp copy-assets" terminal command
 */
