@@ -1,14 +1,14 @@
 {
-  "name": "understrap-child",
-  "version": "0.5.5",
-  "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap",
+  "name": "aviatrix-child",
+  "version": "1",
+  "description": "Custom theme based on Understrap by Holger Koenemann",
   "main": "index.js",
   "scripts": {
     "postinstall": "gulp copy-assets"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holger1411/understrap-child.git"
+    "url": "https://github.com/juliaregalia/AviatrixUSA.com/tree/master/wp-content/themes/aviatrix-child"
   },
   "keywords": [
     "wordpress",
@@ -17,12 +17,8 @@
     "bootstrap",
     "underscores"
   ],
-  "author": "Holger Koenemann",
+  "author": "Julia Regalia",
   "license": "GPL-2.0",
-  "bugs": {
-    "url": "https://github.com/holger1411/understrap-child/issues"
-  },
-  "homepage": "https://understrap.com",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.3",

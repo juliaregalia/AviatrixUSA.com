@@ -2,14 +2,18 @@
 Theme Name: Aviatrix (Child Theme)
 Author: Julia Regalia
 Author URI: juliaregalia.com
-GitHub Theme URI: https://github.com/
-Description: This is a custom theme built for AviatrixUSA.com based on Understrap Child Theme.
+Template: understrap
+GitHub Theme URI: https://github.com/juliaregalia/AviatrixUSA.com/tree/master/wp-content/themes/aviatrix-child
+Description: This is a custom theme built for AviatrixUSA.com based on Understrap Child Theme v0.5.5 by Holger Koenemann.
 License: Aviatrix WordPress Theme, Copyright 2020 Julia Regalia
+
+Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
 
 The Understrap theme, like WordPress, is licensed under the GPL.
 UnderStrap is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
 Resource Licenses:
+Understrap Child Theme License: GNU General Public License v2 or later | http://www.gnu.org/licenses/gpl-2.0.html
 Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)
 and of course
