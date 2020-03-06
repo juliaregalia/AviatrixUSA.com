@@ -1,4 +1,6 @@
 <?php
+require_once 'shortcodes.php';
+
 /**
  * Understrap functions and definitions
  *
@@ -32,4 +34,32 @@ foreach ( $understrap_includes as $file ) {
 		trigger_error( sprintf( 'Error locating /inc%s for inclusion', $file ), E_USER_ERROR );
 	}
 	require_once $filepath;
+}
+
+set_post_thumbnail_size( $width, $height, $crop );
+
+add_shortcode( 'content','content_callback' );
+
+function content_callback( $atts, $content = NULL ){
+    $atts = shortcode_atts(array(
+        'pid' => '',
+    ), $atts);      
+
+    if( ! is_int( 1 * $atts['pid'] ) )
+        return "<!-- Shortcode Error: pid must be an integer -->"; 
+
+    if(  absint( $atts['pid'] ) === get_the_ID() )
+        return "<!-- Shortcode Error: pid can't be the current id -->"; 
+
+    $queried_post = get_post( absint( $atts['pid'] ) );
+
+    if( ! is_object( $queried_post ) )
+        return "<!-- Shortcode Error: Post not found! -->";
+
+    $postcontent = do_shortcode( $queried_post->post_content );
+    $title = $queried_post->post_title;
+
+    $finaloutput = $title . $postcontent;
+
+    return $finaloutput;
 }

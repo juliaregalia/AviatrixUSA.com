@@ -1,1 +1,384 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// Here are all the custom styles for the Aviatrix theme.
+
+// MISC.
+
+.orange {
+    color: $orange;
+}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 960px; //this is an overwrite
+    } 
+}
+
+// TYPOGRAPHY
+// While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.
+
+h1, .home h2, footer h2 {
+    font-family: $font-primary;
+    color: $orange;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 0;
+    span {
+        &.drop {
+            display: block;
+        }
+        &.thick {
+            font-weight: 600;
+        }
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: .75em;
+    color: $gray;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    margin-bottom: .75em;
+    margin-top: 2em;
+    color: $gray;
+}
+
+p { 
+    margin-bottom: 2em; 
+    line-height: 2em; 
+    font-size: 15px;
+}
+
+ul {
+    font-size: 15px;
+    line-height: 2em;
+}
+
+strong {
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+#primary {
+
+    .breadcrumbs {
+        font-size: 13px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 7em;
+    
+        a {
+            color: $black;
+            font-weight: 400;
+            &:hover { 
+                text-decoration: underline; 
+                color: $black;
+            }
+        }
+    }
+    a {
+        color: $orange;
+        font-weight: 600;
+        border-bottom: none;
+        &:hover {
+            color: $light-orange;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+//*****************************//
+// -----------HEADER-----------//
+//*****************************//
+
+//Aviatrix Logo
+#top-nav {
+    background: $black;
+    z-index: 9999;
+    padding: 30px 0;
+    box-shadow: 0 44px 39px 15px rgba(0,0,0,.65);
+    position: fixed;
+    height: 140px;
+    transition: height .25s ease-in-out;
+    -webkit-transition: height .25s ease-in-out; /* Safari */
+}
+
+.active {
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+
+.shrink {
+	height: 65px!important;
+    padding-top: 0!important;
+}
+
+.logo-shrink {
+	width: 220px!important;
+}
+
+.navbar-shrink {
+	margin-top: 60px!important;
+}
+
+#nap {
+    .rfq {
+        color: $orange;
+        text-transform: uppercase;
+    }
+    .header-phone {
+        color: $white;
+        font-weight: 500;
+        font-family: $font-primary;
+        font-size: 22px;
+    }
+    .col.my-auto .row {
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+}
+
+
+//*****************************//
+// ------------ NAV -----------//
+//*****************************//
+
+#navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-top: 130px;
+    transition: margin-top .25s ease-in-out;
+    -webkit-transition: margin-top .25s ease-in-out;
+    z-index: 9999;
+}
+
+nav>#navbarNavDropdown>ul>li>a {
+    color: white!important;
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+}
+
+// <nav> under #nap
+.navbar-brand.custom-logo-link img {
+    width: 300px;
+    transition: width .25s ease-in-out;
+    -webkit-transition: width .25s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $black!important;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+//*****************************//
+// -----------FOOTER-----------//
+//*****************************//
+
+
+footer#wrapper-footer {
+    background-image: url(/wp-content/themes/understrap/src/images/concrete_wall_2.png);
+    background-repeat: repeat;
+    background-size: contain;
+    margin-top: 5em;
+
+    img {
+        width: 150px;
+        display: block;
+        margin: 1em 0;
+    }
+
+    a {
+        color: $orange;
+        font-weight: 600;
+        border-bottom: none;
+        &:hover {
+            color: $light-orange;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .copyright {
+        background: $black;
+        color: $white;
+        justify-content: center;
+        p {
+            margin: .75em;
+            font-size: 10px;
+        }
+        a {
+            color: white!important;
+            text-decoration: underline;
+            font-weight: 400;
+        }
+    }
+}
+
+//*****************************//
+// ------------HOME------------//
+//*****************************//
+
+body.home {
+
+    div.site {
+        background-image: url(/wp-content/themes/understrap/src/images/dark_wall_@2X.png);
+    }
+
+    #hero {
+        background-image: url(/wp-content/themes/understrap/src/images/home_14-nils-nedel_compressed.jpg);
+        background-size: cover;
+        position: absolute;
+        height: 675px;
+        background-position: 19% 0%;
+    }
+
+    footer#wrapper-footer {
+        margin-top: 0;
+    }
+
+    h1 {
+        display: none;
+    }
+    .headline {
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #fff;
+        margin: 6em auto 2em;
+        line-height: 1.25em;
+        font-family: $font-primary;
+    }
+    .home-intro-feature {
+        background: $white;
+        color: $black;
+        padding: 2em 3em;
+        text-align: center;
+        p {
+            line-height: 1.75em;
+        }
+    }
+    .parts-services {
+        color: white;
+        background-repeat: repeat;
+        background-size: contain;    margin: 5em auto;
+        li {
+            line-height: 2em;
+        }
+    }
+}
+
+//Buttons 
+button.btn-primary {
+    color: #ffffff;
+    background-color: $orange;
+    border-color: $orange; 
+    text-transform: uppercase;
+    border-width: 2px; 
+}
+
+.btn-primary:hover {
+    color: $orange;
+    background-color: $white;
+    border-color: $orange;
+    border-width: 2px; 
+}
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: none;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #ffffff;
+    background-color: $orange;
+    border-color: $orange; 
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    color: #ffffff;
+    background-color: $orange;
+    border-color: $orange; 
+}
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-primary.dropdown-toggle:focus {
+        box-shadow: none;
+}
+
+//*****************************//
+// BACK PAGE/DEFAULT TEMPLATE //
+//*****************************//
+
+#primary {
+    margin-top: 435px;
+}
+
+//*****************************//
+// -----------BANNERS----------//
+//*****************************//
+.page {
+    #hero {
+        background: url(/wp-content/themes/understrap/src/images/bg-01.jpg);
+        background-size: cover!important;
+        position: absolute;
+        height: 450px;
+        background-position-y: center!important;
+    }
+
+}
+
+//ABOUT US and it's children
+.page-id-16, .parent-pageid-16 { 
+    #hero {
+        background: $bg1;
+    }
+}
+
+//AVIATRIX ADVANTAGE and it's children
+.page-id-25, .parent-pageid-25 { 
+    #hero {
+        background: $bg2;            
+    }
+}
+
+//INVENTORY and it's children
+.page-id-31, .parent-pageid-31 { 
+    #hero {
+        background: $bg3;
+    }
+}
+
+//CONTACT
+.page-id-12 { 
+    #hero {
+        background: $bg4;            
+    }
+}
+//TERMS & CONDITIONS
+.page-id-12 { 
+    #hero {
+        background: $bg5;            
+    }
+}

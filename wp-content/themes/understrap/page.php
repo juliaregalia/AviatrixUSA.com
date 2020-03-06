@@ -27,6 +27,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+				<?php if(function_exists('bcn_display'))
+				{
+					bcn_display();
+				}?>
+			</div>
 
 			<main class="site-main" id="main">
 

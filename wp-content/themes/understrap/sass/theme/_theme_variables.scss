@@ -3,4 +3,25 @@
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
 
-$primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+
+// COLORS
+$primary: #5533ff; 
+$black: #212121;
+$orange: #e38655;
+$light-orange: #fa9660;
+$white: #ffffff;
+$gray: #6F7074;
+
+// TYPOGRAPHY
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+
+// BACKGROUNDS
+$bg1: url(/wp-content/themes/understrap/src/images/banners/bg-01.jpg);
+$bg2: url(/wp-content/themes/understrap/src/images/banners/bg-02.jpg);
+$bg3: url(/wp-content/themes/understrap/src/images/banners/bg-03.jpg);
+$bg4: url(/wp-content/themes/understrap/src/images/banners/bg-04.jpg);
+$bg5: url(/wp-content/themes/understrap/src/images/banners/bg-05.jpg);
+$bg6: url(/wp-content/themes/understrap/src/images/banners/bg-06.jpg);
+$bg7: url(/wp-content/themes/understrap/src/images/banners/bg-07.jpg);
+$bg8: url(/wp-content/themes/understrap/src/images/banners/bg-08.jpg);
